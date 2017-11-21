@@ -3,45 +3,47 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>后台管理系统-首页</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/bootstrap-validator/css/bootstrapValidator.min.css"/>
-    <link rel="stylesheet" href="assets/nprogress/nprogress.css"/>
-    <link rel="stylesheet" href="css/admin.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="nprogress/nprogress.css"/>
+    <link rel="stylesheet" href="css/common.css">
 </head>
-<body>
-<!--侧边栏-->
+<body class="body_bg">
+<!-- 侧边栏-->
 <aside class="lt_aside">
-    <!--商标-->
+    <!-- 商标-->
     <div class="brand"><a href="index.html">ITCAST</a></div>
-    <!--用户-->
+    <!-- 用户-->
     <div class="user">
-        <img src="images/default.png" alt=""/>
-        <span>超级管理员</span>
+        <img src="images/chenhe.jpg" width="270" height="198" alt=""/>
+        <h4>VIP铂金会员</h4>
     </div>
-    <!--菜单-->
-    <div class="menu">
+
+    <!-- 菜单-->
+    <div class="nav">
         <ul>
-            <li><a href="userManage.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+            <li><a href="user.html"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
             <li>
-                <a href="javascript:;"><span class="glyphicon glyphicon-list"></span> 分类管理</a>
+                <a href="javascript:;"><span class="glyphicon glyphicon-list"></span>分类管理</a>
                 <div class="child" style="display: none">
-                    <a href="categoryFirst.html">一级分类</a>
-                    <a href="categorySecond.html">二级分类</a>
+                    <a href="first.html">一级分类</a>
+                    <a href="second.html">二级分类</a>
                 </div>
             </li>
-            <li><a href="productManage.html"><span class="glyphicon glyphicon-tags"></span> 商品管理</a></li>
+            <li><a href="product.html"><span class="glyphicon glyphicon-tags"></span>商品管理</a></li>
         </ul>
     </div>
 </aside>
-<!--主体区-->
-<div class="lt_main">
-    <!--顶部导航-->
+
+<!-- 主体区-->
+<section class="lt_main">
+    <!-- 顶部导航topbar-->
     <nav class="lt_topbar">
-        <a href="javascript:;" class="pull-left icon_menu"><span class="glyphicon glyphicon-align-justify"></span></a>
-        <a href="javascript:;" class="pull-right icon_logout"><span class="glyphicon glyphicon-log-out"></span></a>
+        <a data-menu href="javascript:;" class="pull-left icon_menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+        <a data-logout href="javascript:;" class="pull-right icon_logout"><span class="glyphicon glyphicon-log-out"></span></a>
     </nav>
     <div class="container-fluid">
-        <!--路径导航-->
+        <!-- 面包屑导航-->
         <ol class="breadcrumb">
             <li><a href="#">管理系统</a></li>
             <li class="active">首页</li>
@@ -51,8 +53,9 @@
             <div class="pic_right pull-right"></div>
         </div>
     </div>
-</div>
+</section>
 
+<!--role  aria   sr-only:  可以删掉-->
 <div class="modal fade" tabindex="-1" id="logoutModal">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -73,12 +76,11 @@
         </div>
     </div>
 </div>
-
-<script src="assets/jquery/jquery.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-<script src="assets/nprogress/nprogress.js"></script>
-<script src="assets/echarts/echarts.min.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="nprogress/nprogress.js"></script>
+<script src="lib/echarts/echarts.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
 </body>
